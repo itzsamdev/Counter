@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: yellow;
+            height: 100vh;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            /* margin: auto; */
+            background-color: #ddd;
+            border: 5px solid black;
+            border-radius: 5px;
+            width: 40vw;
+            height: 40vh;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: x-large;
+            margin: 16px 12px;
+            font-weight: 500;
+        }
+
+        .counter {
+            text-align: center;
+            font-size: 130px;
+            font-weight: 400;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .btn {
+            padding: 10px;
+            color: black;
+            background-color: #ddd;
+            margin: 7px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        @media(max-width: 450px) {
+            .box {
+                width: 100vw;
+                position: static;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1 class="heading">COUNTER</h1>
+        <h1 class="counter" id="count"> 0</h1>
+        <div class="buttons">
+            <button class="btn" id="btn-increase" onclick="increase()">Increase</button>
+            <button class="btn" id="btn-decrease" onclick="decrease()">Decrease</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
